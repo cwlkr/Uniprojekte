@@ -1,0 +1,39 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/section_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/menu_scroll_layout_vertical_margin"
+        android:paddingLeft="@dimen/menu_scroll_layout_horizontal_margin"
+        android:paddingRight="@dimen/menu_scroll_layout_horizontal_margin"
+        android:paddingTop="@dimen/menu_scroll_layout_vertical_margin" >
+
+        <RelativeLayout
+            android:id="@+id/page_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/page_title_favorite_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                layout="@layout/favorite_button" />
+
+            <include
+                android:id="@+id/page_title_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/map_button"
+                android:layout_toLeftOf="@+id/page_title_favorite_button"/>
+
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

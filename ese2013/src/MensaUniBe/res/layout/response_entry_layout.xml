@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/responses_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/invite_list_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dip"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/response_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/friend_name"
+        android:layout_alignTop="@+id/friend_name"
+        android:clickable="false"
+        android:contentDescription="@string/responses_image_view_description"
+        android:padding="5dip"
+        android:src="@drawable/unknown" />
+
+</RelativeLayout>
